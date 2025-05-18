@@ -1,19 +1,17 @@
 # Akii Video Player
 
-A modern, feature-rich video player application for Android with a beautiful UI and powerful playback capabilities.
+A modern video player application for Android with a clean UI and essential playback capabilities.
 
 ## Features
 
-- 🎥 Smooth video playback with ExoPlayer
+- 🎥 Video playback with Media3 ExoPlayer
 - 📁 Browse and play videos from device storage
-- 🎨 Modern Material Design 3 UI
-- 🌙 Dark mode support
-- 🔄 Background playback
-- 📱 Adaptive layout for all screen sizes
-- 🎯 Picture-in-Picture support
-- 🔍 Video thumbnails and metadata
-- 📂 Folder organization
+- 🎨 Material Design 3 UI
+- 📱 Adaptive layout for different screen sizes
 - ⚡ Fast and efficient performance
+- 🔄 Gesture controls for volume, brightness, and seeking
+- 🎯 Fullscreen mode with orientation control
+- 📂 Folder-based video organization
 
 ## Technical Details
 
@@ -39,8 +37,8 @@ A modern, feature-rich video player application for Android with a beautiful UI 
 - Core video playback functionality
 - Modern UI implementation
 - Folder browsing support
-- Background playback
-- Picture-in-Picture mode
+- Gesture controls
+- Fullscreen mode
 
 ## License
 
