@@ -13,6 +13,10 @@ A modern video player application for Android with a clean UI and essential play
 - 🎯 Fullscreen mode with orientation control
 - 📂 Folder-based video organization
 
+## Download
+
+Download the latest release from [GitHub Releases](https://github.com/akashadsare/Akii/releases/tag/v1.0.0)
+
 ## Technical Details
 
 - Minimum SDK: 24 (Android 7.0)
