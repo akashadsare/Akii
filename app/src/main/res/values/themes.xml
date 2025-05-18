@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Akii" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_500</item>
+        <item name="colorPrimaryVariant">@color/primary_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary_500</item>
+        <item name="colorSecondaryVariant">@color/secondary_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Surface colors -->
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Fullscreen theme for PlayerActivity (this one is already NoActionBar, which is good) -->
+    <style name="Theme.MyVideoPlayer.FullScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <!-- If you had overlay themes for AppBarLayout/Toolbar in activity_main.xml using Theme.Akii.xxx,
+         they would still be here, e.g.:
+    <style name="Theme.Akii.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Akii.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+         However, in your provided activity_main.xml, you used:
+         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" for AppBarLayout
+         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" for Toolbar
+         These are standard framework themes and don't need custom definitions unless you want to override them.
+    -->
+</resources>

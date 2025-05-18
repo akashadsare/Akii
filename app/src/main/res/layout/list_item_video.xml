@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Video Thumbnail -->
+    <ImageView
+        android:id="@+id/videoThumbnailImageView"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="12dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+    android:contentDescription="Video thumbnail" />
+
+    <!-- Video Title and Duration -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Video Title Text -->
+        <TextView
+            android:id="@+id/videoTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/text_primary"
+        tools:text="Video Title Example That is Quite Long" />
+
+        <!-- Video Duration Text -->
+        <TextView
+            android:id="@+id/videoDurationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+        tools:text="00:00" />
+    </LinearLayout>
+</LinearLayout>

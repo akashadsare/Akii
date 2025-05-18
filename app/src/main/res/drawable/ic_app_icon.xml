@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M54,54m-48,0a48,48 0,1 1,96 0a48,48 0,1 1,-96 0" />
+
+    <!-- Manga-style A with Glow -->
+    <path
+        android:fillColor="@color/primary_500"
+        android:pathData="M54,28L68,76H40L54,28ZM54,44L54,44L54,44ZM46,54H62V54H46V54Z" />
+
+    <!-- Video Frame with Glow -->
+    <path
+        android:strokeColor="@color/primary_500"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M34,34L74,34L74,74L34,74L34,34Z" />
+
+    <!-- Play Button with Glow -->
+    <path
+        android:fillColor="@color/primary_500"
+        android:pathData="M54,54m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0" />
+
+    <!-- Play Triangle -->
+    <path
+        android:fillColor="@color/primary_200"
+        android:pathData="M58,46L58,62L66,54L58,46Z" />
+
+    <!-- Manga Speed Lines -->
+    <path
+        android:strokeColor="@color/primary_500"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M28,28L38,38M28,38L38,48M28,48L38,58" />
+
+    <path
+        android:strokeColor="@color/primary_500"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M70,28L80,38M70,38L80,48M70,48L80,58" />
+
+</vector> 

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/player_control_gradient">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/exo_back_button"
+            style="@style/ExoMediaButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Back"
+            android:src="@drawable/ic_back"
+            android:background="@drawable/circle_button_background"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/exo_custom_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="#80000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2" />
+        
+        <TextView
+            android:id="@+id/playlistIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/rounded_background"
+            android:fontFamily="sans-serif-medium"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:shadowColor="#80000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+        
+        <ImageButton
+            android:id="@+id/playlistButton"
+            style="@style/ExoMediaButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_button_background"
+            android:contentDescription="Show playlist"
+            android:padding="8dp"
+            android:src="@drawable/ic_playlist" />
+        
+        <ImageButton
+            android:id="@+id/exo_fullscreen_button"
+            style="@style/ExoMediaButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_button_background"
+            android:contentDescription="Toggle fullscreen"
+            android:padding="8dp"
+            android:src="@drawable/ic_fullscreen_enter" />
+        
+        <ImageButton
+            android:id="@+id/exo_subtitles_button"
+            style="@style/ExoMediaButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_button_background"
+            android:contentDescription="Subtitles"
+            android:padding="8dp"
+            android:src="@drawable/ic_subtitles" />
+        
+        <ImageButton
+            android:id="@+id/exo_audio_tracks_button"
+            style="@style/ExoMediaButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Audio tracks"
+            android:src="@drawable/ic_audio_track"
+            android:background="@drawable/circle_button_background"
+            android:padding="8dp" />
+
+        <ImageButton
+            android:id="@+id/exo_settings_button"
+            style="@style/ExoMediaButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Settings"
+            android:src="@drawable/ic_settings"
+            android:background="@drawable/circle_button_background"
+            android:padding="8dp" />
+    
+    </LinearLayout>
+
+    <!-- Bottom Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="16dp">
+        
+        <!-- Progress Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+            
+            <TextView
+                android:id="@id/exo_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:shadowColor="#80000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+            
+            <androidx.media3.ui.DefaultTimeBar
+                android:id="@id/exo_progress"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="8dp"
+                android:layout_weight="1"
+                app:played_color="#FF4081"
+                app:scrubber_color="#FF4081"
+                app:scrubber_disabled_size="6dp"
+                app:scrubber_dragged_size="14dp"
+                app:scrubber_enabled_size="10dp"
+                app:unplayed_color="#40FFFFFF" />
+            
+            <TextView
+                android:id="@id/exo_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:shadowColor="#80000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+        
+        <!-- Playback Controls -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            
+            <ImageButton
+                android:id="@+id/custom_prev"
+                style="@style/ExoMediaButton.Previous"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circle_button_background"
+                android:contentDescription="Previous video"
+                android:padding="12dp"
+                android:src="@drawable/ic_previous" />
+            
+            <ImageButton
+                android:id="@id/exo_rew"
+                style="@style/ExoMediaButton.Rewind"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circle_button_background"
+                android:contentDescription="Rewind"
+                android:padding="12dp" />
+            
+            <ImageButton
+                android:id="@+id/exo_play"
+                style="@style/ExoMediaButton.Play"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/circle_button_background"
+                android:contentDescription="Play"
+                android:padding="16dp" />
+            
+            <ImageButton
+                android:id="@+id/exo_pause"
+                style="@style/ExoMediaButton.Pause"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/circle_button_background"
+                android:contentDescription="Pause"
+                android:padding="16dp" />
+            
+            <ImageButton
+                android:id="@id/exo_ffwd"
+                style="@style/ExoMediaButton.FastForward"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circle_button_background"
+                android:contentDescription="Fast forward"
+                android:padding="12dp" />
+            
+            <ImageButton
+                android:id="@+id/custom_next"
+                style="@style/ExoMediaButton.Next"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circle_button_background"
+                android:contentDescription="Next video"
+                android:padding="12dp"
+                android:src="@drawable/ic_next" />
+        
+        </LinearLayout>
+        
+        <!-- Playlist Controls -->
+    </LinearLayout>
+</FrameLayout>

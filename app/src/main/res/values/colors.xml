@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors - Deep Ocean Blue gradient -->
+    <color name="primary_200">#64B5F6</color>  <!-- Light Ocean Blue -->
+    <color name="primary_500">#1A237E</color>  <!-- Deep Ocean Blue -->
+    <color name="primary_700">#0D47A1</color>  <!-- Dark Ocean Blue -->
+    
+    <!-- Secondary colors - Teal gradient -->
+    <color name="secondary_200">#4DD0E1</color>  <!-- Light Teal -->
+    <color name="secondary_500">#00838F</color>  <!-- Deep Teal -->
+    <color name="secondary_700">#006064</color>  <!-- Dark Teal -->
+    
+    <!-- Accent colors -->
+    <color name="accent_200">#81D4FA</color>  <!-- Light Sky Blue -->
+    <color name="accent_500">#0288D1</color>  <!-- Sky Blue -->
+    <color name="accent_700">#01579B</color>  <!-- Dark Sky Blue -->
+    
+    <!-- Basic colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3FFFFFF</color>
+    
+    <!-- Dark theme colors -->
+    <color name="dark_surface">#0A1929</color>  <!-- Deep Night Blue -->
+    <color name="dark_background">#000000</color>
+    <color name="white_70">#B3FFFFFF</color>
+    
+    <!-- Gradient colors -->
+    <color name="gradient_start">#1A237E</color>  <!-- Deep Ocean Blue -->
+    <color name="gradient_middle">#0D47A1</color>  <!-- Dark Ocean Blue -->
+    <color name="gradient_end">#01579B</color>  <!-- Dark Sky Blue -->
+</resources>
