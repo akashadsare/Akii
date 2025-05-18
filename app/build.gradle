@@ -8,6 +8,15 @@ android {
     namespace 'com.videoplayer.akii'
     compileSdk 34
 
+    signingConfigs {
+        release {
+            storeFile file("your-keystore.jks")
+            storePassword "your-store-password"
+            keyAlias "your-key-alias"
+            keyPassword "your-key-password"
+        }
+    }
+
     defaultConfig {
         applicationId "com.videoplayer.akii"
         minSdk 24
@@ -26,7 +35,7 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
         }
         debug {
             applicationIdSuffix ".debug"
