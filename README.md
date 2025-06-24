@@ -1,6 +1,7 @@
 # Akii Video Player
+Video Demo: https://youtu.be/QEywhP9nxM8
 
-A modern video player application for Android with a clean UI and essential playback capabilities.
+Description: A modern video player application for Android with a clean UI and essential playback capabilities.
 
 ## Features
 
@@ -43,10 +44,6 @@ Download the latest release from [GitHub Releases](https://github.com/akashadsar
 - Folder browsing support
 - Gesture controls
 - Fullscreen mode
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contributing
 
